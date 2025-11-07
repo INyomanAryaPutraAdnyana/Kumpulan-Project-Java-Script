@@ -1,0 +1,97 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(71, 53, 30);
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.timer-container {
+  text-align: center;
+  background-color: rgb(27, 25, 25);
+  padding: 60px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px 8px yellow;
+  max-width: 600px;
+  width: 40%;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.countdown {
+  color: aqua;
+  margin-bottom: 20px;
+}
+
+.countdown span {
+  color: red;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* ✅ ini yang benar, untuk input-container */
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* Jarak antar input */
+  flex-wrap: wrap; /* Supaya rapi kalau layar kecil */
+  margin-top: 1rem;
+}
+
+.input-container input {
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  width: 120px;
+  text-align: center;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Placeholder warna agak redup */
+.input-container input::placeholder {
+  color: #ddd;
+}
+
+/* Efek saat fokus */
+.input-container input:focus {
+  border-color: #facc15; /* kuning */
+  background: rgba(0, 0, 0, 0.6);
+}
+
+button {
+  background-color: #facc15; /* kuning utama */
+  color: #1f2937; /* abu gelap biar kontras */
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* animasi halus */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Efek hover */
+button:hover {
+  background-color: #e6a709; /* kuning lebih gelap */ /* transform: translateY(-3px); */
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+/* Efek klik */
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}

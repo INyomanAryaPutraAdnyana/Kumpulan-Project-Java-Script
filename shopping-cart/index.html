@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <h1>My Store</h1>
+        <div id="cart-icon" class="cart-icon">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <!--product list / main section-->
+    <main>
+        <section id="product-list">
+            <!--list product nya-->
+        </section>
+    </main>
+
+    <!--modal untuk cart, apabila cart di click-->
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <span id="cart-close-btn" class="close">&times;</span>
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items">
+                <!-- list dari product di keranjang -->
+            </ul>
+            <div class="total-price">
+                Total: $<span id="total-price">0.00</span>
+            </div>
+        </div>
+    </div>
+
+    <!--modal untuk detail product-->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span id="view-details-close-btn" class="close">&times;</span>
+            <img src="" alt="Product Image" id="detail-image">
+            <h2 id="detail-title"></h2>
+            <p id="detail-description"></p>
+            <p id="detail-price"></p>
+            <button id="add-to-cart-btn">Add To Cart</button>
+
+        </div>
+    </div>
+
+
+    <script src=" script.js"></script>
+</body>
+
+</html>

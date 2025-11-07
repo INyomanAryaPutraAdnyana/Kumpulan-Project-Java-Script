@@ -1,0 +1,102 @@
+/* ===== Global Style ===== */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(180deg, #87ceeb 0%, #f0f9ff 100%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* ===== Container ===== */
+.weather-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weather-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Title ===== */
+h1 {
+  font-size: 2.2em;
+  color: #0077b6;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+/* ===== Weather Info ===== */
+.weather-info {
+  margin-bottom: 25px;
+}
+
+.weather-info h2 {
+  font-size: 1.6em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.weather-info p {
+  font-size: 1.2em;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* ===== Weather Icon ===== */
+.weather-icon {
+  margin-top: 15px;
+}
+
+.weather-icon img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #33849e 0%, #87ceeb 90%);
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.weather-icon img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Footer (optional) ===== */
+footer {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* ===== Responsiveness ===== */
+@media (max-width: 480px) {
+  .weather-container {
+    padding: 25px 20px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .weather-info h2 {
+    font-size: 1.4em;
+  }
+
+  .weather-icon img {
+    width: 100px;
+    height: 100px;
+  }
+}

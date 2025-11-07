@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar Playlist -->
+        <aside class="playlist-container">
+            <label for="audio-upload" class="upload-label">+ Import Audio</label>
+            <input type="file" accept="audio/*" multiple id="audio-upload">
+            <ul id="playlist"></ul>
+        </aside>
+
+        <!-- Player -->
+        <main class="player-container">
+            <div id="audio-control" class="audio-control">
+                <!-- Play / Pause Button -->
+                <button id="play-pause" class="play-button" aria-label="Play or Pause">
+                    <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#fff" d="M8 5v14l11-7z" />
+                    </svg>
+                    <svg id="pause-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        style="display: none;">
+                        <path fill="#fff" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                    </svg>
+                </button>
+
+                <!-- Progress Bar -->
+                <div class="progress-container">
+                    <input id="seek-bar" class="seek-bar" type="range" value="0" min="0" max="100" step="1">
+                </div>
+
+                <!-- Track Info -->
+                <div class="current-track-container">
+                    <p id="current-track">No Track Selected</p>
+                    <audio src="" id="audio" preload="metadata"></audio>
+                </div>
+
+                <!-- Time -->
+                <div class="time-container">
+                    <p id="time-display">00:00 / 00:00</p>
+                </div>
+
+                <!-- Volume -->
+                <div class="volume-container">
+                    <input id="volume-bar" class="volume-bar" type="range" value="100" min="0" max="100" step="1"
+                        aria-label="Volume Control">
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
